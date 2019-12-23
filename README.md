@@ -7,12 +7,12 @@
 ## Folders created:
 
 ```
-/src/constants
-/src/screens
 /src/assets
 /src/components
-/src/db
 /src/config
+/src/constants
+/src/db
+/src/screens
 ```
 
 ## Files changed:
