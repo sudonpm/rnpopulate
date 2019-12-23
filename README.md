@@ -62,6 +62,8 @@ export default createAppContainer(Navigator);
 
 ```assets/splash.png``` to ```src/assets/splash.png```
 
+## Deleted assets folder after copying it's contents to src/assets folder.
+
 ## Files Created:
 
 ### src/components/Navigator.js:
