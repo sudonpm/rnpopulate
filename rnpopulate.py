@@ -83,3 +83,66 @@ if str(path.exists('%s/assets' % currentPath)) == "True":
     shutil.rmtree('%s/assets' % currentPath)
     print("done deleting project/assets folder now that we are using project/src/assets")
 else: print("%s/assets doesn't exist to be deleted." % currentPath)
+
+# writing and implementing Navigator Component
+# open file
+file1 = open("%s/App.js" % currentPath, "w")
+# set strings in the array L
+L = ["import { createAppContainer } from 'react-navigation'; \n",
+     "import Navigator from './src/components/Navigator'; \n\n",
+     "export default createAppContainer(Navigator); \n"]
+
+
+# write to file with header first then strings defined in L
+file1.write("//sudonpm's Navigator Main App file \n\n")
+file1.writelines(L)
+# close file
+file1.close()
+
+# open file
+file2 = open("%s/Navigator.js" % path4, "w")
+# set strings in the array S
+S = ["import { createStackNavigator } from 'react-navigation-stack'; \n\n",
+     "import MainScreen from '../screens/MainScreen'; \n\n",
+     "const Navigator = createStackNavigator( \n",
+     "    { \n",
+     "        Main: MainScreen, \n",
+     "      }, \n",
+     "      { \n",
+     "        initialRouteName: 'Main', \n",
+     "        defaultNavigationOptions: { \n",
+     "          title: 'App Title' \n",
+     "        } \n",
+     "      } \n",
+     "); \n\n",
+     "export default Navigator;"]
+
+
+# write to file with header first then strings defined in S
+file2.write("//sudonpm's Navigator Component \n\n")
+file2.writelines(S)
+# close file
+file2.close()
+
+# open file
+file3 = open("%s/MainScreen.js" % path2, "w")
+# set strings in the array K
+K = ["import React from 'react'; \n",
+     "import { Text, View } from 'react-native'; \n\n",
+     "const MainScreen = ({ navigation }) => { \n",
+     "  return ( \n",
+     "    <View> \n",
+     "      <Text> \n",
+     "        App Main Screen \n",
+     "      </Text> \n",
+     "    </View> \n",
+     "  ); \n",
+     "}; \n\n",
+     "export default MainScreen;"]
+
+
+# write to file with header first then strings defined in K
+file3.write("//sudonpm's Navigator's Main Screen \n\n")
+file3.writelines(K)
+# close file
+file3.close()
