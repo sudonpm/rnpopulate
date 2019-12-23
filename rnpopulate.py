@@ -1,7 +1,11 @@
 #!/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+
+# USE AT YOUR OWN RISK. THIS IS A SHARED WORK IN PROGRESS.
+
 import os
 import shutil
 from os import path
+
 
 # get the path of where the project/script is being run
 currentPath = os.getcwd()
