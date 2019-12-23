@@ -18,4 +18,8 @@ So when I start a new project in Code's terminal window I can just type:
 
 ```python```
 
+<<<<<<< HEAD
 ```import rnpopulate```
+=======
+```import rnpopulate```
+>>>>>>> a65d796881fbb46b2c2745ada9897b8122f2b85d
