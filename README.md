@@ -54,7 +54,7 @@ const Navigator = createStackNavigator(
       {
         initialRouteName: 'Main',
         defaultNavigationOptions: {
-          title: 'Accountable 0.1'
+          title: 'App Title'
         }
       }
 );
@@ -78,7 +78,7 @@ const MainScreen = ({ navigation }) => {
   return ( 
     <View>
       <Text>
-        Accountable
+        Main Screen
       </Text>
     </View>
   );
