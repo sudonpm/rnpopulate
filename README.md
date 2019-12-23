@@ -99,7 +99,9 @@ react-navigation-stack
 
 I've modified my **.bash_profile** and added:
 
-```export PYTHONPATH=$PYTHONPATH:/My/Scripts/Folder/That/Has/rnpopulate.py```
+```
+export PYTHONPATH=$PYTHONPATH:/My/Scripts/Folder/That/Has/rnpopulate.py
+```
 
 So when I start a new project in Code's terminal window I can just type:
 
